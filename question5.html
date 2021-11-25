@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Write a JavaScript program to compute the exponent of a number
+    </title>
+    <script>
+      const exponent = (a, n) => {
+        if (n == 0) {
+          return 1;
+        }
+
+        return a * exponent(a, n - 1);
+      };
+      const ans = exponent(4, 2);
+      console.log(ans);
+    </script>
+  </head>
+</html>
